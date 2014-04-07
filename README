@@ -12,7 +12,7 @@ The server services two pieces of information about the system:
 
 It also supports 3 additional functionalities:
 
-/runloop - a loop that spins for 15 seconds. Provided to observe change in load average.
+/runloop - starts a loop in parallel that spins for 15 seconds. Provided to observe change in load average.
 /allocanon - allocate a block of anonymous memory. Provided to observe change in available memory.
 /freeanon - frees a block of most reccently allocated anonymous memory.
 
