@@ -1,0 +1,14 @@
+Group members: Jaeil Yi (yijaeil), Johanna Pinsirikul  (johannar)
+
+server.c - Main code for the actual server. handles all necessary functions
+           regarding server operation specified by the assignment handout.
+
+json.c - Parses /proc/meminfo and /proc/loadavg as well as commands issued to 
+         the server.
+
+rio.c - Wrapper functions for RIO package provided by csapp.
+
+When the server starts, the command line flags determine its behavior.
+It creates socket and listens for connections. When a connection is made, a new thread is spawned to process requests.
+Each functions are called based on the request made.
+
