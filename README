@@ -1,4 +1,23 @@
-Group members: Jaeil Yi (yijaeil), Johanna Pinsirikul  (johannar)
+CS3214 Project 5 - System Status Web Service
+
+An implementation of basic HTTP web service that publishes a Linux system's status as reported by the kernel via the
+/proc file system.
+
+The server supports HTTP 1.0/1.1 protocols.
+
+The server services two pieces of information about the system:
+
+/loadavg - load average of the system based on /proc/loadavg
+/meminfo - memory information of the system based on /proc/meminfo
+
+It also supports 3 additional functionalities:
+
+/runloop - a loop that spins for 15 seconds. Provided to observe change in load average.
+/allocanon - allocate a block of anonymous memory. Provided to observe change in available memory.
+/freeanon - frees a block of most reccently allocated anonymous memory.
+
+
+File Descriptions:
 
 server.c - Main code for the actual server. handles all necessary functions
            regarding server operation specified by the assignment handout.
